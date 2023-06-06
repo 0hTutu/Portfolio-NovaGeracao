@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,500&display=swap');
+@keyframes fadeInAnimation {
+    0% {
+           opacity: 0.3;
+    }
+    100% {
+           opacity: 1;
+    }
+    }
+
+:root {
+    --letter-color: #ffff;
+    --letter-highlight: #2f2335;
+    --light-pink: #F6E6FD;
+
+--bg-color: linear-gradient(180deg, var(--color-purple-1), var(--color-purple-2), var(--color-purple-3)); 
+    --color-purple-1: #7c3aed;
+    --color-purple-2: #a855f7;
+    --color-purple-3: #bf46ef;
+
+--instagram-bg: linear-gradient(120deg, var(--instagram-color1), var(--instagram-color2), var(--instagram-color3), var(--instagram-color4),  var(--instagram-color5));
+    --instagram-color1: #feda75;
+    --instagram-color2: #fa7e1e;
+    --instagram-color3: #d62976;
+    --instagram-color4: #962fbf;
+    --instagram-color5: #4f5bd5;
+
+--linkedin-bg: #0e76a8;
+
+--github-bg: #333;
+--github-letter: #f5f5f5;
+}
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    /* height: 100vh;  */
+    box-sizing: border-box;
+    background: var(--bg-color);
+    color: var(--letter-color);
+    animation: fadeInAnimation ease 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}       
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.link-cabecalho {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.375rem;
+    color: var(--letter-highlight);
+    text-decoration: none;
+}
+
+.link-cabecalho:hover {
+    transition: 0.3s;
+    transform: scale(1.10);
+}
+
+.all {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.all__conteudo {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titulo-principal {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+}
+
+.destaquecinza {
+    color: var(--letter-highlight);
+}
+
+.texto-biografia {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.all__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 28.6px;
+    align-items: center;
+}
+
+.ancoras {
+  
+gap: 20px;
+    width: 50%;
+    text-align: column;
+    border-radius: 28px;
+    font-size: 1.3rem;
+    padding: 20.5px 0px;
+    color: var(--letter-color);
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    
+}
+                                    /* ANCORA DO INSTAGRAM */
+.ancora-instagram {
+    /* background-color: #F5EAFE; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 1.3rem;
+    padding: 20.5px 0px;
+    color: var(--letter-color);
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    border: 1px solid var(--letter-highlight);
+}
+
+.ancora-instagram:hover {
+    transition: 1.2s;
+    transform: scale(1.05);
+    background: var(--instagram-bg);
+
+}
+
+                                    /* ANCORA DO LINKEDIN */
+.ancora-linkedin {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 1.3rem;
+    padding: 20.5px 0px;
+    color: var(--letter-color);
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    border: 1px solid var(--letter-highlight);
+}
+
+.ancora-linkedin:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+    background: var(--linkedin-bg);
+}
+
+                                    /* ANCORA DO GITHUB */
+.ancora-github {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 50%;
+        text-align: center;
+        border-radius: 28px;
+        font-size: 1.3rem;
+        padding: 20.5px 0px;
+        color: var(--letter-color);
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        border: 1px solid var(--letter-highlight);
+    }
+    
+    .ancora-github:hover {
+        transition: 0.3s;
+        transform: scale(1.05);
+        background: var(--github-bg);
+        color: var(--github-letter);
+    }
+
+.img {
+    display: block;
+    width: 37%;
+    border-radius: 85%;
+    background: #e0e0e0;
+    box-shadow:  17px 17px 34px var(--letter-highlight);
+}
+
+.links__subtitulo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: var(--letter-color);
+}
+
+.rodape {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--light-pink);
+    color: var(--letter-highlight);
+    padding: 10px;
+}
+
+.texto-geral {
+    font-size: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.texto-geral a{
+    text-decoration: none;
+    color: var(--letter-highlight);
+}
+
+@media(max-width: 1200px) {
+    
+    .all {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .all__conteudo {
+        width: auto;
+    }
+    
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+    
